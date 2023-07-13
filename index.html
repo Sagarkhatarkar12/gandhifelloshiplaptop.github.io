@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandhi felloship</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       .navigation-bar{
+        position: relative;
+        position: static;
+
+        display: flex;
+        /* justify-content:  space-between; */
+         padding: 20px 0px;
+        align-items: center;
+        height: 75px;
+        background-color: #243746;
+       }
+       .humburgger{
+         /* height: 50px; */
+         /* display: flex; */
+       }
+       .hum{
+        
+         height: 30px;
+         width: 40px;
+          
+       }
+       .line{
+        display: inline-block;
+        height: 3px;
+        /* width: 100%; */
+        /* position: absolute; */
+
+        width: 30px;
+        
+        /* margin-top: 1px; */
+        background-color: rgb(255, 255, 255);
+       }
+       .top{
+        position: absolute;
+        left:  13px;
+        top: 23px;
+            /* position:  absolute; */
+            /* top: 0px; */
+           
+       }
+       .middle{
+        left:  13px;
+        top: 37px;
+
+            /* position:  absolute; */
+            position: absolute;
+             /* left: 20px; */
+       }
+       .bottom{
+        /* position: absolute; */
+        position: absolute;
+        left:  13px;
+        top: 30px;
+       }
+       .left-con{
+        display: flex;
+       }
+       li{
+        list-style: none;
+
+       }
+       a{
+        text-decoration:none;
+       }
+       .left-con{
+        margin-left: 40px;
+       }
+       img{
+        height: 60px;
+        /* width: 170px; */
+       }
+       .sm-l{
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 286px;
+        height: 50px;
+        width: 1px;
+        background-color: white;
+       }
+       .i-2{
+        margin-left: 20px;
+       }
+       .social{
+        font-size: 12px;
+        color: rgb(249, 241, 241);
+        border: 1px solid rgb(237, 228, 228);
+        margin-left: 12px;
+        border-radius: 300px;
+        margin-top: 20px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+
+
+}
+.social:hover{
+    background-color: #84BE39;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+        
+       i{
+        color: rgb(244, 236, 236);
+       }
+       .social-link{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        right: 23%;
+        top: 0px;
+
+       }
+       .nav-btn{
+        position: absolute;
+        right: 4%;
+       }
+       .btn-h{
+        /* position: absolute; */
+        padding: 7px 9px;
+        background-color: #84BE39;
+        color: white;
+        border: 1px solid #84BE39;
+       }
+       .btn-h:hover{
+        background-color: orangered;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+       }
+       .f1{
+        height: 59vh;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        justify-content:center;
+        /* text-align: center; */
+         position: relative;
+         position: absolute;
+        flex-direction: column;
+        background-color: red;
+       }
+       .com-t{
+        /* margin: 100px 100px; */
+        position: absolute;
+        bottom: 43%;
+        left: 17%;
+       }
+       .f1{
+        background-image: url("01.jpg");
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+       }
+       .split{
+        position: absolute;
+        /* background-color: rebeccapurple; */
+        bottom: 4%;
+        left:40px;
+       }
+       .dot{
+        background-color: transparent;
+        padding: 4px 10px;
+        margin-left: 3px;
+        border: 1px solid white;
+       }
+       .dot:hover{
+        background-color: white;
+        transition: 300ms;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+       }
+       .f1{
+        /* visibility: hidden; */
+       }
+       .f2{
+        height: 59vh;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        justify-content:center;
+        /* text-align: center; */
+         /* position: relative; */
+         position: absolute;
+        flex-direction: column;
+        background-color: red;
+        background-image: url("02.jpg");
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: auto;
+       }
+       .f2{
+        /* visibility: hidden; */
+       }
+       .f3{
+        height: 59vh;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        justify-content:center;
+        /* text-align: center; */
+         position: relative;
+        flex-direction: column;
+        background-color: red;
+        background-image: url("3.jpg");
+        /* background-position:center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .f4{
+        height: 59vh;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        justify-content:center;
+        /* text-align: center; */
+         position: relative;
+         position: absolute;
+        flex-direction: column;
+        background-color: red;
+        background-image: url("4\'.jpg");
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: auto;
+       }
+       .f2{
+        /* display: none; */
+        position: absolute;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+       }
+       .f3{
+        /* display: none; */
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+       }
+       .f4{
+        /* display: none; */
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+       }
+       .carsoul{
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        
+       }
+       .active{
+        background-color: white;
+       }
+       .btn-con{
+        position: absolute;
+        bottom: 25%;
+        left: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 40px; */
+        z-index: 1;
+       }
+       .btn{
+        padding: 10px 50px;
+        background-color: darkorange;
+        margin-left: 0.1px;
+        /* border: 1px solid bl/ack; */
+    
+       }
+       .wl{
+        padding: 20px 50px;
+
+       }
+       .wl a span{
+        color: white;
+       }
+       .pd{
+        padding: 14px 60px;
+      background-color: #ebebeb;
+      cursor: pointer;
+        /* border-right: 1px solid black; */
+        
+       }
+       .pd a{
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+       
+       }
+       .wl{
+        padding: 20px 60px;
+        border-right: none;
+        background-color: orangered;
+       }
+       .btn-con li:hover{
+           background-color: antiquewhite;
+       }
+       .tt{
+        height: 60vh;
+            width: 1000px;
+            margin: auto;
+            margin-top: 100px;
+        /* height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto; */
+       }
+       .par{
+        margin-top:40px;
+       }
+    </style>
+</head>
+<body>
+    <div class="containe">
+        <nav class="navigation-bar">
+           <div class="humburgger"> 
+                <div class="hum">
+                    <span class="top line"></span>
+                    <span class="middle line"></span>
+                    <span class="bottom line"></span>
+                </div>
+           </div>
+           
+           <ul class="left-con">
+            <li><a href=""><img src="icon.png" alt=""></a></li>
+             <li class="sm-l"></li>
+            <li class="i-2"><a href=""><img src="1icon.png" alt=""></a></li>
+           </ul>
+           <div class="right-nav">
+             <ul class="social-link">
+                <li class="social"><a href=""><i class="bi bi-facebook"></i></a></li>
+                <li class="social"><a href=""><i class="bi bi-twitter"></i></a></li>
+                <li class="social"><a href=""><i class="bi bi-instagram"></i></a></li>
+             </ul>
+           </div>
+           <div class="nav-btn">
+             <button class="btn-h">
+                Interested in Gandhi Fellowship?
+                
+                </button>
+           </div>
+        </nav>
+
+        <section class="carsoul" id="car">
+             <div class="f1">
+                
+                    <div class="com-t">
+                   <div class="heading">
+
+                    <h1>The Gandhi 
+                        <br>
+                        Fellowship Experience
+                    </h1>
+                   </div> 
+                   <div class="para">
+                     <p>do you have what it take to be a change maker?Begin your jorney today.</p>
+                   </div>
+               
+
+                </div>
+                <div class="split">
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                </div>
+             </div>
+
+             <div class="f2">
+                 
+                
+                    <div class="com-t">
+                   <div class="heading">
+
+                    <h1>The Gandhi 
+                        <br>
+                        Fellowship Experience
+                    </h1>
+                   </div> 
+                   <div class="para">
+                     <p>do you have what it take to be a change maker?Begin your jorney today.</p>
+                   </div>
+               
+
+                </div>
+                <!-- <div class="split">
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                </div> -->
+
+
+             </div>
+             <div class="f3">
+                                
+                <div class="com-t">
+                    <div class="heading">
+ 
+                     <h1>The Gandhi 
+                         <br>
+                         Fellowship Experience
+                     </h1>
+                    </div> 
+                    <div class="para">
+                      <p>do you have what it take to be a change maker?Begin your jorney today.</p>
+                    </div>
+                
+ 
+                 </div>
+                 <!-- <div class="split">
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                 </div>
+  -->
+ 
+
+             </div>
+             <div class="f4">
+                
+                <div class="com-t">
+                    <div class="heading">
+ 
+                     <h1>The Gandhi 
+                         <br>
+                         Fellowship Experience
+                     </h1>
+                    </div> 
+                    <div class="para">
+                      <p>do you have what it take to be a change maker?Begin your jorney today.</p>
+                    </div>
+                
+ 
+                 </div>
+                 <!-- <div class="split">
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                 </div> -->
+             </div>
+            </section>
+             
+             <ul class="btn-con">
+                 <li class="pd wl"><a href=""><span>welcome</span></a></li>
+                 <li class="pd"><a href=""><span>OUR PILLERS</span></a></li>
+                 <li class="pd"><a href=""><span>OUR REACH</span></a></li>
+                 <li class="pd"><a href=""><span>OUR PROGRAMS</span></a></li>
+                 <li class="pd"><a href=""><span>JOURNEY</span></a></li>
+                </ul>
+             
+      
+    <!-- </section> -->
+    
+        <div class="tt">
+        <h1>Awaken the Nation Builder in You</h1>
+        <p class="par" >If you want to be a change agent, and play a key role in building our nation by taking all challenges head-on and solving live problems,  then <br> the Gandhi Fellowship awaits you.</p>
+        <p class="par">The Gandhi Fellowship was born from Mahatma Gandhi’s belief, ‘Be the change you wish to see in this world’. The Fellowship, (an initiative of Piramal <br> Foundation), is a platform established in 2008 for every self-motivated Indian youth with a dream of seeing a thriving India by discovering and building on the <br> leader within. A leader who will drive transformation in India. A nation-builder who will ensure that no one is left behind. A committed citizen who will play <br> a key role in creating a thriving India.</p>
+        <p class="par">Since inception, Gandhi Fellows have been living our motto of “Build Self, Build Nation” , as they continue to inspire thousands of self-motivated youth across <br> India to follow the less trodden path of this experiential, residential 2 year Fellowship. This immersive journey undertaken at the grassroots of India, provides <br> an in-depth experience across areas of Public Health, Education and Water.</p>
+        <p class ="par">Today, our Fellows, building on the enriching Fellowship experience, are multi-sectoral entrepreneurs or essaying key roles in organisations, fuelled by their <br> innate passion and spirit of selflessness, as they spearhead large scale change.</p>
+        <p style="margin-top:20px;" class="par" > Come. Be the change.</p>
+        </div>
+
+
+    </div>
+    <script>
+        var car = document.querySelectorAll("#car");
+        var btn = document.querySelectorAll(".split");
+        console.log(btn);
+        car = Array.from(car[0].childNodes)
+    let slideIndex = 1;
+     
+        // console.log(car);
+        let counter = 0;
+        let f1 = car[1];
+        let f2 = car[3]
+        let f3 = car[5]
+        let f4 = car[7]
+        let arr = new Array();
+        arr[0] = f1;
+        arr[1] = f2;
+        arr[2] = f3;
+        arr[3] = f4;
+        // console.log(arr)
+        arr.forEach((slide,index)=>{
+            slide.style.left = `${index * 100}%`
+            console.log(slide,index)
+        })
+
+        const slideImage  = ()=>{
+            arr.forEach((slide)=>{
+                slide.style.transform = `translateX(-${counter*100}%)`
+            })
+        }
+        function myfunc1(){
+            counter =0;
+            slideImage();
+        }
+        function myfunc(){
+            counter++;
+            slideImage()
+           
+
+        }
+        setInterval(myfunc, 3000)
+        setInterval(myfunc1 , 9000)
+
+    // var slide =0;
+    // setInterval(myincr, 1000)
+    // function myincr(){
+            
+    // }
+        // for(let i =0; i<4 ; i++){
+        //     if(i==slide){
+        //         arr[slide].style.display = "Block";
+        //         slide = slide + 1
+        //         setTimeout(1000)
+        //     }
+        //     else{
+        //     arr[i].style.display = "none";
+        // }
+        // }
+  
+         
+      
+
+ 
+    </script>
+</body>
+</html>
